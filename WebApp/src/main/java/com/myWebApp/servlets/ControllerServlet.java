@@ -21,7 +21,7 @@ public class ControllerServlet extends HttpServlet {
         String jspName = uri.substring(uri.lastIndexOf('/'));
         System.out.println("JSP Name: "+jspName);
 
-        if(jspName.equalsIgnoreCase("userStuff")) {
+        if(jspName.equalsIgnoreCase("/userInformation")) {
 
             String name = request.getParameter("name");
             if(name != null && !name.isEmpty() && users.containsKey(name)) {
